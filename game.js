@@ -137,6 +137,7 @@ function draw() {
         context.drawImage(food.image, food.x, food.y, box - 1, box - 1);
     if (colision()) {
         window.location.assign("end.html");
+        return;
     }
 }
 
